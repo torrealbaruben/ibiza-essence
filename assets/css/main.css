@@ -415,6 +415,54 @@ section + section {
   margin: 0;
 }
 
+.single-villa .carousel .carousel-inner {
+  border-radius: 30px;
+  margin-bottom: 3em;
+}
+.single-villa .map {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.single-villa .content {
+  margin-bottom: 2em;
+}
+.single-villa .list {
+  align-items: center;
+  background: rgba(83, 157, 254, 0.2);
+  border-radius: 30px;
+  color: #1e2631;
+  display: flex;
+  font-size: 12px;
+  gap: 10px;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 2em;
+}
+.single-villa .table-title {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 1em 0;
+}
+.single-villa .form {
+  text-align: left !important;
+  font-size: 0.9em !important;
+}
+.single-villa .form-label {
+  font-weight: bold;
+}
+.single-villa .form .button {
+  margin: 0 !important;
+  display: block !important;
+  width: 100%;
+}
+
+.guide-img {
+  border-radius: 30px;
+  margin: 2em 0;
+}
+
 .button {
   background-color: #001650;
   border-radius: 200px;
@@ -424,6 +472,7 @@ section + section {
   padding: 0.7em 2.5em;
   text-align: center;
   text-decoration: none;
+  border: none;
 }
 .button:hover {
   background-color: #539dfe;
