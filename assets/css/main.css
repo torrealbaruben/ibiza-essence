@@ -712,6 +712,146 @@ section + section {
   margin: 2em 0;
 }
 
+.copyright {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 1em 0;
+}
+.copyright p {
+  margin: 0;
+}
+.copyright a {
+  color: #001650;
+  display: inline-block;
+}
+
+.footer {
+  background: #001650;
+  border-radius: 20px;
+  padding: 0 3em 2em;
+  margin-top: 1em;
+}
+@media (min-width: 992px) {
+  .footer {
+    border-radius: 30px;
+  }
+}
+.footer .info {
+  align-items: center;
+  background: #539dfe;
+  border-radius: 30px;
+  display: flex;
+  font-size: 1.2em;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+  margin: -1.5em 0 1em;
+  padding: 1em;
+  text-align: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer .info {
+    gap: 30px;
+    flex-direction: row;
+    font-size: 1em;
+  }
+}
+@media (min-width: 992px) {
+  .footer .info {
+    font-size: 1.3em;
+    margin-top: -2.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .info {
+    gap: 50px;
+  }
+}
+.footer .info a {
+  color: #001650;
+  text-decoration: none;
+}
+.footer .info li:first-child {
+  background-image: url(../img/icon-whatsapp.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center left;
+  padding-left: 40px;
+}
+@media (min-width: 768px) {
+  .footer .info li:first-child {
+    background-image: url(../img/icon-whatsapp.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center top;
+    padding: 55px 0 0 0;
+  }
+}
+.footer .info li:nth-child(2) {
+  background-image: url(../img/icon-email.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center left;
+  padding-left: 40px;
+}
+@media (min-width: 768px) {
+  .footer .info li:nth-child(2) {
+    background-image: url(../img/icon-email.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center top;
+    padding: 55px 0 0 0;
+  }
+}
+.footer .info li:last-child {
+  background-image: url(../img/icon-instagram.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center left;
+  padding-left: 40px;
+}
+@media (min-width: 768px) {
+  .footer .info li:last-child {
+    background-image: url(../img/icon-instagram.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center top;
+    padding: 55px 0 0 0;
+  }
+}
+.footer .menu {
+  color: #cfcbcc;
+  margin-top: 1em;
+  padding: 0;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .footer .menu {
+    text-align: left;
+  }
+}
+.footer .menu li {
+  list-style: none;
+}
+.footer .menu li:first-child {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .footer .menu li:first-child {
+    margin-bottom: 0.7em;
+  }
+}
+.footer .menu a {
+  color: #cfcbcc;
+  text-decoration: none;
+}
+.footer .menu a:hover {
+  color: #539dfe;
+}
+
 .button {
   background-color: #001650;
   border-radius: 200px;
