@@ -12,6 +12,7 @@
 			<?php include("sections/article-villa.php"); ?>
 			<?php include("sections/article-villa.php"); ?>
 			<?php include("sections/article-villa.php"); ?>
+			<?php include("sections/article-villa.php"); ?>
 			<div class="col-12 text-center">
 				<a href="category-villas.php" class="button">Explore more Villas</a>
 			</div>

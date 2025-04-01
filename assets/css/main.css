@@ -23,10 +23,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 23;
+}
+@media (min-width: 768px) {
+  .header {
+    position: fixed;
+  }
 }
 .header .container {
   background: white;
@@ -40,7 +45,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 .header .navbar-brand img {
-  width: 140px;
+  width: 105px;
+}
+@media (min-width: 768px) {
+  .header .navbar-brand img {
+    width: 140px;
+  }
 }
 .header .navbar-brand + .navbar-nav {
   flex-direction: row;
@@ -139,15 +149,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  .hero {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
 }
 
 .carousel-caption {
-  bottom: inherit;
-  top: 30%;
-  z-index: 1;
+  position: static;
+}
+@media (min-width: 768px) {
+  .carousel-caption {
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-caption {
+    bottom: inherit;
+    top: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-caption {
+    top: 40%;
+  }
 }
 .carousel-shadow {
   background: url(../img/hero-title-shadow.png);
@@ -159,16 +191,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 .carousel h1 {
   color: #001650;
-  font-size: 3.5em;
-  line-height: 1em;
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .carousel h1 {
+    font-size: 3.5em;
+    line-height: 1em;
+  }
 }
 .carousel p {
   color: #1e2631;
-  font-size: 1.2em;
-  line-height: 1.2em;
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
+}
+@media (min-width: 992px) {
+  .carousel p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    width: 50%;
+  }
+}
+.carousel .button {
+  margin-bottom: 0;
 }
 
 .offcanvas-title {
@@ -179,7 +223,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section + section {
-  padding: 4em 0;
+  padding: 2em 0;
+}
+@media (min-width: 768px) {
+  section + section {
+    padding: 3em 0;
+  }
+}
+@media (min-width: 1200px) {
+  section + section {
+    padding: 4em 0;
+  }
 }
 
 .services {
@@ -198,9 +252,14 @@ section + section {
 .services article .name {
   color: #001650;
   font-family: "Inter", sans-serif;
-  font-size: 1.2em;
+  font-size: 0.9em;
   margin: 0.5em 0 0 0;
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .services article .name {
+    font-size: 1.2em;
+  }
 }
 .services .button {
   margin-bottom: 0;
@@ -209,19 +268,40 @@ section + section {
 .villas {
   background: #ededed;
   border-radius: 30px;
-  margin: 1em;
+}
+@media (min-width: 992px) {
+  .villas {
+    margin: 1em;
+  }
+}
+@media (min-width: 992px) {
+  .villas article:last-of-type {
+    display: none;
+  }
 }
 .villas article a {
   background: white;
-  border-radius: 30px;
-  margin: 1em 0;
-  padding: 1em;
+  border-radius: 20px;
+  margin: 0.5em 0;
+  padding: 0.7em;
   text-decoration: none;
   display: block;
 }
+@media (min-width: 992px) {
+  .villas article a {
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 30px;
+  }
+}
 .villas article .img {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
+}
+@media (min-width: 992px) {
+  .villas article .img {
+    border-radius: 20px;
+  }
 }
 .villas article .icon {
   width: 30px;
@@ -230,28 +310,141 @@ section + section {
 .villas article .name {
   color: #001650;
   font-family: "Old Standard TT", serif;
-  font-size: 1.7em;
+  font-weight: bold;
   margin: 0.5em 0 0 0;
   text-transform: uppercase;
-  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .villas article .name {
+    font-size: 1.7em;
+  }
 }
 .villas article .price {
   color: #539dfe;
   font-weight: bold;
+  font-size: 0.9em;
+}
+@media (min-width: 992px) {
+  .villas article .price {
+    font-size: 1em;
+  }
 }
 .villas article .text {
   color: #1e2631;
+  font-size: 0.8em;
+}
+@media (min-width: 992px) {
+  .villas article .text {
+    font-size: 1em;
+  }
 }
 .villas article .list {
   align-items: center;
   color: #1e2631;
   display: flex;
   font-size: 12px;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.villas article .list li:first-child {
+  align-items: center;
+  background-image: url(../img/icon-family.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center left;
+  display: flex;
+  min-height: 30px;
+  padding-left: 36px;
+  width: 25%;
+}
+@media (min-width: 1200px) {
+  .villas article .list li:first-child {
+    align-items: center;
+    background-image: url(../img/icon-family.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center left;
+    display: flex;
+    min-height: 30px;
+    padding-left: 36px;
+    width: 15%;
+  }
+}
+.villas article .list li:nth-child(2) {
+  align-items: center;
+  background-image: url(../img/icon-bed.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center left;
+  display: flex;
+  min-height: 30px;
+  padding-left: 36px;
+  width: 25%;
+}
+@media (min-width: 1200px) {
+  .villas article .list li:nth-child(2) {
+    align-items: center;
+    background-image: url(../img/icon-bed.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center left;
+    display: flex;
+    min-height: 30px;
+    padding-left: 36px;
+    width: 15%;
+  }
+}
+.villas article .list li:nth-child(3) {
+  align-items: center;
+  background-image: url(../img/icon-shower.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center left;
+  display: flex;
+  min-height: 30px;
+  padding-left: 36px;
+  width: 25%;
+}
+@media (min-width: 1200px) {
+  .villas article .list li:nth-child(3) {
+    align-items: center;
+    background-image: url(../img/icon-shower.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center left;
+    display: flex;
+    min-height: 30px;
+    padding-left: 36px;
+    width: 15%;
+  }
+}
+.villas article .list li:last-child {
+  align-items: center;
+  background-image: url(../img/icon-place.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center left;
+  display: flex;
+  min-height: 30px;
+  padding-left: 36px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .villas article .list li:last-child {
+    align-items: center;
+    background-image: url(../img/icon-place.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center left;
+    display: flex;
+    min-height: 30px;
+    padding-left: 36px;
+    width: 40%;
+  }
 }
 .villas .button {
   margin-bottom: 0;
@@ -261,17 +454,34 @@ section + section {
   border-radius: 30px;
   margin: 1em;
 }
+@media (min-width: 992px) {
+  .yachts article:last-of-type {
+    display: none;
+  }
+}
 .yachts article a {
-  border-radius: 30px;
+  border-radius: 20px;
   border: 1px solid rgba(30, 38, 49, 0.2);
-  margin: 1em 0;
-  padding: 1em;
-  text-decoration: none;
   display: block;
+  margin: 0.5em 0;
+  padding: 0.7em;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .yachts article a {
+    border-radius: 30px;
+    margin: 1em 0;
+    padding: 1em;
+  }
 }
 .yachts article .img {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 100%;
+}
+@media (min-width: 992px) {
+  .yachts article .img {
+    border-radius: 20px;
+  }
 }
 .yachts article .icon {
   width: 30px;
@@ -280,22 +490,37 @@ section + section {
 .yachts article .name {
   color: #001650;
   font-family: "Old Standard TT", serif;
-  font-size: 1.7em;
   margin: 0.5em 0 0 0;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 100%;
+}
+@media (min-width: 992px) {
+  .yachts article .name {
+    font-size: 1.7em;
+  }
 }
 .yachts article .list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 1em 0 0 0;
-  gap: 10px;
-  justify-content: space-between;
   align-items: center;
-  font-size: 16px;
   color: #1e2631;
-  flex-wrap: wrap;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .yachts article .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .yachts article .list {
+    font-size: 16px;
+  }
 }
 .yachts article .list li {
   flex-basis: 45%;
@@ -311,10 +536,15 @@ section + section {
 
 .guide {
   background: #001650;
-  border-radius: 30px;
-  margin: 1em;
-  text-align: center;
+  border-radius: 20px;
   padding-bottom: 8em;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .guide {
+    margin: 1em;
+    border-radius: 30px;
+  }
 }
 .guide article a {
   border-radius: 30px;
@@ -351,19 +581,34 @@ section + section {
 }
 .about .bg {
   background: white;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 3em;
+}
+@media (min-width: 992px) {
+  .about .bg {
+    border-radius: 30px;
+  }
 }
 .about article .img {
   border-radius: 20px;
   width: 100%;
+  margin-bottom: 1em;
+}
+@media (min-width: 992px) {
+  .about article .img {
+    margin-bottom: 0;
+  }
 }
 .about article .name {
   color: white;
   font-family: "Old Standard TT", serif;
-  font-size: 1.5em;
   margin: 0.5em 0 0 0;
   text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .about article .name {
+    font-size: 1.5em;
+  }
 }
 .about .head {
   text-align: left;
@@ -408,8 +653,12 @@ section + section {
 }
 .head .title {
   color: #001650;
-  font-size: 2.7em;
   margin: 0;
+}
+@media (min-width: 992px) {
+  .head .title {
+    font-size: 2.7em;
+  }
 }
 .head .description {
   margin: 0;
@@ -493,6 +742,6 @@ section + section {
         border-radius: 50px;
         border: 1px solid rgba($color-dark, .1);
     }
-}*/
+    }*/
 
 /*# sourceMappingURL=main.css.map */

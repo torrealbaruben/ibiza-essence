@@ -1,4 +1,4 @@
-<article class="col-12 col-md-4">
+<article class="col-6 col-lg-4">
 	<a href="single-yacht.php" class="shadow">
 		<img class="img" src="assets/img/yacth-imagen.jpg" alt="Yacths">
 		<h3 class="name">ASTROMAR 42</h3>

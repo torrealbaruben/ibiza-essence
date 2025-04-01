@@ -8,20 +8,20 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<article class="col-4">
+		<div class="row justify-content-center">
+			<article class="col-10 col-md-4">
 				<a href="single-guide.php">
 					<img class="img" src="assets/img/guide-imagen.jpg" alt="Guide">
 					<h3 class="name">IBIZA HEALING</h3>
 				</a>
 			</article>
-			<article class="col-4">
+			<article class="col-10 col-md-4">
 				<a href="single-guide.php">
 					<img class="img" src="assets/img/guide-imagen-2.jpg" alt="Guide">
 					<h3 class="name">BEST RESTAURANTS IBIZA</h3>
 				</a>
 			</article>
-			<article class="col-4">
+			<article class="col-10 col-md-4">
 				<a href="single-guide.php">
 					<img class="img" src="assets/img/guide-imagen-3.jpg" alt="Guide">
 					<h3 class="name">BEST BEACHES IN IBIZA</h3>

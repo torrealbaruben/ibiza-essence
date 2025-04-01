@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="row justify-content-between">
-			<article class="col-6">
+			<article class="col-12 col-md-6">
 				<div class="bg">
 					<p class="name">Ruben Torrealba</p>
 					<p class="extra">Web Design</p>
@@ -18,7 +18,7 @@
 					</div>
 				</div>
 			</article>
-			<article class="col-6">
+			<article class="col-12 col-md-6">
 				<div class="bg">
 					<p class="name">Ruben Torrealba</p>
 					<p class="extra">Web Design</p>

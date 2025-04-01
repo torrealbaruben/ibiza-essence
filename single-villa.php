@@ -151,7 +151,7 @@
 										</div>
 									</div>
 									<div class="mb-3">
-										<label class="form-label">Messange textarea</label>
+										<label class="form-label">Messange</label>
 										<textarea class="form-control" rows="3"></textarea>
 									</div>
 									<div class="col-12">

@@ -158,5 +158,5 @@
 		</div>
 	</div>
 </section>
-<?php include("sections/villas.php"); ?>
+<?php include("sections/yachts.php"); ?>
 <?php include("footer.php"); ?>

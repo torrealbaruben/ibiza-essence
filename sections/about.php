@@ -3,7 +3,7 @@
 		<div class="row justify-content-center">
 			<div class="col-12 bg shadow-lg">
 				<article class="row justify-content-between align-items-center">
-					<div class="col-5">
+					<div class="col-12 col-md-5">
 						<div class="head">
 							<h2 class="title">About us</h2>
 							<p class="description">LUXURY CONCIERGE SERVICES IN ibiza</p>
@@ -15,7 +15,7 @@
 						</div>
 						<a href="single-about.php" class="button">Know more</a>
 					</div>
-					<div class="col-6">
+					<div class="col-12 col-md-6 order-first order-md-last">
 						<img class="img" src="assets/img/about-imagen.jpg" alt="About">
 					</div>						
 				</article>

@@ -12,6 +12,7 @@
 			<?php include("sections/article-yacht.php"); ?>
 			<?php include("sections/article-yacht.php"); ?>
 			<?php include("sections/article-yacht.php"); ?>
+			<?php include("sections/article-yacht.php"); ?>
 			<div class="col-12 text-center">
 				<a href="category-yachts.php" class="button">Explore more Yacths</a>
 			</div>
