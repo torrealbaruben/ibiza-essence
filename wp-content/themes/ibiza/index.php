@@ -1,0 +1,9 @@
+<?php get_header(); ?>
+<?php get_template_part("sections/hero"); ?>
+<?php get_template_part("sections/services"); ?>
+<?php get_template_part("sections/villas"); ?>
+<?php get_template_part("sections/yachts"); ?>
+<?php get_template_part("sections/guide"); ?>
+<?php get_template_part("sections/about"); ?>
+<?php get_template_part("sections/testimonial"); ?>
+<?php get_footer(); ?>
